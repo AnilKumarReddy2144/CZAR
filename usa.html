@@ -27,14 +27,11 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Append
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!--Floating WhatsApp css-->
+  <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+  <!--Floating WhatsApp javascript-->
+  <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
 </head>
 
 <body class="blog-details-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -62,19 +59,28 @@
               <li><a href="business-visa.html">Business Visa</a></li>
               <li><a href="dependent-visa.html">Dependent Visa</a></li>
               <li><a href="permanent-visa.html">Permanent Visa</a></li>
-              <li><a href="ielts-guidence.html">IELTS Guidance</a></li>
-              <li><a href="gre.html">GRE</a></li>
+              <li class="dropdown has-dropdown"><a href="#"><span>Global Opportunities</span> <i class="bi bi-chevron-down"></i></a>
+                <ul class="dd-box-shadow">
+                  <li><a href="englishtraning.html">English Traning</a></li>
+                  <li><a href="#">Overseas Education</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
           <!-- <li><a href="index.html#countries">Countries</a></li> -->
           <li class="dropdown has-dropdown active"><a href="index.html#countries" class="active"><span>Countries</span> <i class="bi bi-chevron-down"></i></a>
             <ul class="dd-box-shadow">
-              <li><a href="usa.html">USA</a></li>
-              <li><a href="canada.html">Canada</a></li>
-              <li><a href="australia.html">Australia</a></li>
-              <li><a href="permanent-visa.html">United Kindom</a></li>
+              <li><a href="usa.html">USA <img src="https://www.worldometers.info/img/flags/small/tn_us-flag.gif" alt="" width="25px" height="20px"></a></li>
+              <li><a href="canada.html">Canada <img src="https://www.worldometers.info/img/flags/small/tn_ca-flag.gif" alt="" width="25px" height="20px"></a></li>
+              <li><a href="australia.html">Australia<img src="https://www.worldometers.info/img/flags/small/tn_au-flag.gif" alt="" width="25px" height="20px"></a></li>
+              <li><a href="uk.html">United Kindom <img src="https://www.worldometers.info/img/flags/small/tn_uk-flag.gif" alt="" width="25px" height="20px"></a></li>
+              <li><a href="israel.html">Israil <img src="https://www.worldometers.info/img/flags/small/tn_is-flag.gif" alt="" width="25px" height="20px"></a></li>
+              <li><a href="ireland.html">Ireland <img src="https://www.worldometers.info/img/flags/small/tn_ei-flag.gif" alt="" width="25px" height="20px"></a></li>
+              <li><a href="hungery.html">Hungery <img src="https://www.worldometers.info/img/flags/small/tn_hu-flag.gif" alt="" width="25px" height="20px"></a></li>
+              <li><a href="italy.html">Italy <img src="https://www.worldometers.info/img/flags/small/tn_it-flag.gif" alt="" width="25px" height="20px"></a></li>
             </ul>
           </li>
+          <li><a href="englishtraning.html">Training</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
 
@@ -297,6 +303,24 @@
     <div></div>
     <div></div>
   </div>
+
+  <div id="WAButton"></div>
+    
+  <script type="text/javascript">
+      $(function () {
+          $('#WAButton').floatingWhatsApp({
+              phone: '9398129306', //WhatsApp Business phone number
+              headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+              popupMessage: 'Hello, how can we help you?', //Popup Message
+              showPopup: true, //Enables popup display
+              buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
+              //headerColor: 'crimson', //Custom header color
+              //backgroundColor: 'crimson', //Custom background button color
+              position: "right" //Position: left | right
+
+          });
+      });
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
